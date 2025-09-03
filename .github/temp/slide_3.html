@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python vs. Your Familiar Tools</title>
+    <style>
+        :root {
+            /* Backgrounds */
+            --bg-primary: #0f0f23;
+            --bg-secondary: #1a1a2e;
+            --bg-tertiary: #16213e;
+            --bg-accent: #0f172a;
+            
+            /* Text */
+            --text-primary: #f8fafc;
+            --text-secondary: #cbd5e1;
+            --text-muted: #64748b;
+            
+            /* Interactive */
+            --border-primary: #334155;
+            --border-accent: #475569;
+            --shadow: rgba(0, 0, 0, 0.5);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            overflow: hidden;
+        }
+
+        .slide-container {
+            width: 1024px;
+            height: 768px;
+            margin: 0 auto;
+            position: relative;
+            background: linear-gradient(135deg, var(--bg-primary), var(--bg-secondary));
+        }
+
+        .safe-area {
+            width: 960px;
+            height: 720px;
+            margin: 24px auto;
+            position: relative;
+        }
+
+        .content-area {
+            width: 900px;
+            height: 660px;
+            margin: 30px auto;
+            padding: 24px 0;
+        }
+
+        .slide-title {
+            font-size: 32px;
+            font-weight: 600;
+            letter-spacing: -0.01em;
+            color: var(--text-primary);
+            margin-bottom: 32px;
+            text-align: center;
+        }
+
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: var(--bg-tertiary);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+            margin-bottom: 32px;
+        }
+
+        .comparison-table th {
+            background: linear-gradient(135deg, #1e3a8a, #1e40af);
+            color: var(--text-primary);
+            padding: 16px 12px;
+            font-size: 16px;
+            font-weight: 600;
+            text-align: left;
+            border-bottom: 1px solid var(--border-primary);
+        }
+
+        .comparison-table th:first-child {
+            width: 20%;
+            background: linear-gradient(135deg, #334155, #475569);
+        }
+
+        .comparison-table td {
+            padding: 14px 12px;
+            border-bottom: 1px solid var(--border-primary);
+            font-size: 14px;
+            font-family: 'Monaco', 'Consolas', monospace;
+            vertical-align: top;
+        }
+
+        .comparison-table tr:nth-child(even) {
+            background: rgba(255, 255, 255, 0.02);
+        }
+
+        .comparison-table tr:hover {
+            background: rgba(59, 130, 246, 0.1);
+        }
+
+        .task-cell {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            font-weight: 600;
+            color: var(--text-primary);
+            background: var(--bg-accent) !important;
+        }
+
+        .excel-cell { color: #22c55e; }
+        .sql-cell { color: #f59e0b; }
+        .r-cell { color: #ec4899; }
+        .python-cell { 
+            color: #3b82f6; 
+            font-weight: 600;
+        }
+
+        .key-insight {
+            background: linear-gradient(135deg, var(--bg-tertiary), var(--bg-accent));
+            border: 1px solid var(--border-primary);
+            border-radius: 12px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+            border-left: 4px solid #60a5fa;
+        }
+
+        .key-insight-header {
+            font-size: 18px;
+            font-weight: 600;
+            color: #60a5fa;
+            margin-bottom: 8px;
+        }
+
+        .key-insight-text {
+            font-size: 16px;
+            color: var(--text-secondary);
+        }
+
+        .slide-footer {
+            position: absolute;
+            bottom: 16px;
+            left: 32px;
+            right: 32px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 12px;
+            color: var(--text-muted);
+            border-top: 1px solid var(--border-primary);
+            padding-top: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-container">
+        <div class="safe-area">
+            <div class="content-area">
+                <h1 class="slide-title">Python vs. Your Familiar Tools</h1>
+                
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>Task</th>
+                            <th>Excel</th>
+                            <th>SQL</th>
+                            <th>R</th>
+                            <th>Python</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="task-cell">Data Import</td>
+                            <td class="excel-cell">Click & drag</td>
+                            <td class="sql-cell">SELECT FROM table</td>
+                            <td class="r-cell">read.csv()</td>
+                            <td class="python-cell">pd.read_csv()</td>
+                        </tr>
+                        <tr>
+                            <td class="task-cell">Filter Data</td>
+                            <td class="excel-cell">AutoFilter</td>
+                            <td class="sql-cell">WHERE condition</td>
+                            <td class="r-cell">subset(data, condition)</td>
+                            <td class="python-cell">df[df['col'] > 5]</td>
+                        </tr>
+                        <tr>
+                            <td class="task-cell">Calculate Average</td>
+                            <td class="excel-cell">=AVERAGE()</td>
+                            <td class="sql-cell">SELECT AVG()</td>
+                            <td class="r-cell">mean(data$col)</td>
+                            <td class="python-cell">df['col'].mean()</td>
+                        </tr>
+                        <tr>
+                            <td class="task-cell">Create Charts</td>
+                            <td class="excel-cell">Insert Chart</td>
+                            <td class="sql-cell">Reporting tools</td>
+                            <td class="r-cell">ggplot()</td>
+                            <td class="python-cell">plt.plot()</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <div class="key-insight">
+                    <div class="key-insight-header">Key Insight</div>
+                    <div class="key-insight-text">Python combines the best of all worlds with consistent syntax</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="slide-footer">
+            <div></div>
+            <div>3 | Fall 2025</div>
+        </div>
+    </div>
+</body>
+</html>
