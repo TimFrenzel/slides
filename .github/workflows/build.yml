@@ -31,15 +31,6 @@ jobs:
       - name: Install dependencies
         run: npm ci
         
-      - name: Debug: List files
-        run: |
-          echo "=== Repository structure ==="
-          find . -name "*.md" -type f
-          echo "=== Theme files ==="
-          ls -la theme/
-          echo "=== Course directories ==="
-          ls -la machine-learning/ data-analytics/ data-visualization/
-        
       - name: Build all slide decks
         run: npm run build:all
         
@@ -48,48 +39,25 @@ jobs:
         
       - name: Create root index.html
         run: |
-          cat > index.html << 'EOF'
-          <!DOCTYPE html>
-          <html>
-          <head>
-            <title>Academic Slides System</title>
-            <style>
-              body { font-family: Arial, sans-serif; max-width: 800px; margin: 50px auto; padding: 20px; }
-              h1 { color: #333; }
-              .course { margin: 20px 0; padding: 15px; border: 1px solid #ddd; border-radius: 5px; }
-              .course h2 { margin-top: 0; color: #2c3e50; }
-              .week { margin: 10px 0; }
-              .week a { color: #3498db; text-decoration: none; }
-              .week a:hover { text-decoration: underline; }
-            </style>
-          </head>
-          <body>
-            <h1>Academic Slides System</h1>
-            <p>Welcome to the academic slides system. Select a course and week to view the slides.</p>
-            
-            <div class="course">
-              <h2>Machine Learning</h2>
-              <div class="week"><a href="machine-learning/week01/">Week 1: Machine Learning Fundamentals</a></div>
-              <div class="week"><a href="machine-learning/week02/">Week 2: Coming Soon</a></div>
-              <div class="week"><a href="machine-learning/week03/">Week 3: Coming Soon</a></div>
-            </div>
-            
-            <div class="course">
-              <h2>Data Analytics</h2>
-              <div class="week"><a href="data-analytics/week01/">Week 1: Data Analytics Fundamentals</a></div>
-              <div class="week"><a href="data-analytics/week02/">Week 2: Coming Soon</a></div>
-              <div class="week"><a href="data-analytics/week03/">Week 3: Coming Soon</a></div>
-            </div>
-            
-            <div class="course">
-              <h2>Data Visualization</h2>
-              <div class="week"><a href="data-visualization/week01/">Week 1: Data Visualization Principles</a></div>
-              <div class="week"><a href="data-visualization/week02/">Week 2: Coming Soon</a></div>
-              <div class="week"><a href="data-visualization/week03/">Week 3: Coming Soon</a></div>
-            </div>
-          </body>
-          </html>
-          EOF
+          echo '<!DOCTYPE html>' > index.html
+          echo '<html><head><title>Academic Slides System</title>' >> index.html
+          echo '<style>body{font-family:Arial,sans-serif;max-width:800px;margin:50px auto;padding:20px}h1{color:#333}.course{margin:20px 0;padding:15px;border:1px solid #ddd;border-radius:5px}.course h2{margin-top:0;color:#2c3e50}.week{margin:10px 0}.week a{color:#3498db;text-decoration:none}.week a:hover{text-decoration:underline}</style>' >> index.html
+          echo '</head><body>' >> index.html
+          echo '<h1>Academic Slides System</h1>' >> index.html
+          echo '<p>Welcome to the academic slides system. Select a course and week to view the slides.</p>' >> index.html
+          echo '<div class="course"><h2>Machine Learning</h2>' >> index.html
+          echo '<div class="week"><a href="machine-learning/week01/">Week 1: Machine Learning Fundamentals</a></div>' >> index.html
+          echo '<div class="week"><a href="machine-learning/week02/">Week 2: Coming Soon</a></div>' >> index.html
+          echo '<div class="week"><a href="machine-learning/week03/">Week 3: Coming Soon</a></div></div>' >> index.html
+          echo '<div class="course"><h2>Data Analytics</h2>' >> index.html
+          echo '<div class="week"><a href="data-analytics/week01/">Week 1: Data Analytics Fundamentals</a></div>' >> index.html
+          echo '<div class="week"><a href="data-analytics/week02/">Week 2: Coming Soon</a></div>' >> index.html
+          echo '<div class="week"><a href="data-analytics/week03/">Week 3: Coming Soon</a></div></div>' >> index.html
+          echo '<div class="course"><h2>Data Visualization</h2>' >> index.html
+          echo '<div class="week"><a href="data-visualization/week01/">Week 1: Data Visualization Principles</a></div>' >> index.html
+          echo '<div class="week"><a href="data-visualization/week02/">Week 2: Coming Soon</a></div>' >> index.html
+          echo '<div class="week"><a href="data-visualization/week03/">Week 3: Coming Soon</a></div></div>' >> index.html
+          echo '</body></html>' >> index.html
         
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
