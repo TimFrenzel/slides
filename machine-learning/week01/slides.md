@@ -40,58 +40,40 @@
 </div>
 
 <div class="slide-content">
-  <h2 style="font-size: 32px; font-weight: 600; letter-spacing: -0.01em; color: #f8fafc; margin-bottom: 32px; text-align: center;">
-    Why Python Dominates Data Science
-  </h2>
+  <h2>Why Python Dominates Data Science</h2>
   
-  <div style="display: grid; grid-template-columns: 40% 60%; gap: 32px; margin-bottom: 24px;">
-    <div style="background: #16213e; border: 1px solid #334155; border-radius: 12px; padding: 24px; backdrop-filter: blur(10px); box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);">
-      <h3 style="font-size: 20px; font-weight: 600; color: #3b82f6; margin-bottom: 20px; border-bottom: 1px solid #334155; padding-bottom: 8px;">
-        Key Advantages
-      </h3>
-      <ul style="list-style: none; padding-left: 0;">
-        <li style="position: relative; padding-left: 24px; margin-bottom: 16px; color: #cbd5e1; font-size: 16px; line-height: 1.5;">
-          <span style="position: absolute; left: 0; color: #60a5fa; font-weight: 700;">→</span>
-          Simple, readable syntax (closer to English)
-        </li>
-        <li style="position: relative; padding-left: 24px; margin-bottom: 16px; color: #cbd5e1; font-size: 16px; line-height: 1.5;">
-          <span style="position: absolute; left: 0; color: #60a5fa; font-weight: 700;">→</span>
-          Massive ecosystem of data science libraries
-        </li>
-        <li style="position: relative; padding-left: 24px; margin-bottom: 16px; color: #cbd5e1; font-size: 16px; line-height: 1.5;">
-          <span style="position: absolute; left: 0; color: #60a5fa; font-weight: 700;">→</span>
-          Industry standard for ML/AI development
-        </li>
-        <li style="position: relative; padding-left: 24px; margin-bottom: 16px; color: #cbd5e1; font-size: 16px; line-height: 1.5;">
-          <span style="position: absolute; left: 0; color: #60a5fa; font-weight: 700;">→</span>
-          Strong community support and documentation
-        </li>
+  <div class="two-columns">
+    <div class="advantages-box">
+      <h3>Key Advantages</h3>
+      <ul class="advantages-list">
+        <li>→ Simple, readable syntax (closer to English)</li>
+        <li>→ Massive ecosystem of data science libraries</li>
+        <li>→ Industry standard for ML/AI development</li>
+        <li>→ Strong community support and documentation</li>
       </ul>
     </div>
     
-    <div style="background: #16213e; border: 1px solid #334155; border-radius: 12px; padding: 24px; backdrop-filter: blur(10px); box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);">
-      <h3 style="font-size: 20px; font-weight: 600; color: #3b82f6; margin-bottom: 20px; border-bottom: 1px solid #334155; padding-bottom: 8px;">
-        Usage Statistics
-      </h3>
-      <div style="margin-bottom: 16px; padding: 12px; background: #0f172a; border-radius: 8px; border-left: 4px solid #22d3ee;">
-        <span style="font-size: 24px; font-weight: 700; color: #22d3ee; display: block;">67%</span>
-        <span style="font-size: 14px; color: #cbd5e1; margin-top: 4px;">of data scientists use Python (Stack Overflow 2024)</span>
+    <div class="stats-box">
+      <h3>Usage Statistics</h3>
+      <div class="stat-item">
+        <div class="stat-number">67%</div>
+        <div class="stat-text">of data scientists use Python (Stack Overflow 2024)</div>
       </div>
-      <div style="margin-bottom: 16px; padding: 12px; background: #0f172a; border-radius: 8px; border-left: 4px solid #22d3ee;">
-        <span style="font-size: 24px; font-weight: 700; color: #22d3ee; display: block;">Top Choice</span>
-        <span style="font-size: 14px; color: #cbd5e1; margin-top: 4px;">at Google, Netflix, Spotify</span>
+      <div class="stat-item">
+        <div class="stat-number">Top Choice</div>
+        <div class="stat-text">at Google, Netflix, Spotify</div>
       </div>
-      <div style="margin-bottom: 16px; padding: 12px; background: #0f172a; border-radius: 8px; border-left: 4px solid #22d3ee;">
-        <span style="font-size: 24px; font-weight: 700; color: #22d3ee; display: block;">8.2M</span>
-        <span style="font-size: 14px; color: #cbd5e1; margin-top: 4px;">developers worldwide use Python</span>
+      <div class="stat-item">
+        <div class="stat-number">8.2M</div>
+        <div class="stat-text">developers worldwide use Python</div>
       </div>
     </div>
   </div>
   
-  <div style="background: #0f172a; border: 1px solid #334155; border-radius: 8px; padding: 20px; font-family: 'Monaco', 'Consolas', monospace; font-size: 16px;">
-    <span style="color: #64748b;"># This reads like English</span><br>
-    <span style="color: #f59e0b;">if</span> <span style="color: #a855f7;">sales</span> &gt; <span style="color: #a855f7;">target</span>:<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #f59e0b;">print</span>(<span style="color: #22d3ee;">"Goal achieved!"</span>)
+  <div class="code-example">
+    <pre><code class="python"># This reads like English
+if sales > target:
+    print("Goal achieved!")</code></pre>
   </div>
 </div>
 
