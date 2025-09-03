@@ -1,6 +1,6 @@
 <!-- .slide: data-background="#0f0f23" -->
 <div class="slide-header">
-  <div class="slide-title-header">Machine Learning • Week 1</div>
+  <div class="slide-title-header">Machine Learning • Module 1|1</div>
   <div></div>
 </div>
 
@@ -35,7 +35,7 @@
 
 <!-- .slide: data-background="#0f0f23" -->
 <div class="slide-header">
-  <div class="slide-title-header">Machine Learning • Week 1</div>
+  <div class="slide-title-header">Machine Learning • Module 1|1</div>
   <div></div>
 </div>
 
@@ -90,7 +90,7 @@
   
   <div style="background: #0f172a; border: 1px solid #334155; border-radius: 8px; padding: 20px; font-family: 'Monaco', 'Consolas', monospace; font-size: 16px;">
     <span style="color: #64748b;"># This reads like English</span><br>
-    <span style="color: #f59e0b;">if</span> <span style="color: #a855f7;">sales</span> > <span style="color: #a855f7;">target</span>:<br>
+    <span style="color: #f59e0b;">if</span> <span style="color: #a855f7;">sales</span> &gt; <span style="color: #a855f7;">target</span>:<br>
     &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #f59e0b;">print</span>(<span style="color: #22d3ee;">"Goal achieved!"</span>)
   </div>
 </div>
@@ -104,7 +104,7 @@
 
 <!-- .slide: data-background="#0f0f23" -->
 <div class="slide-header">
-  <div class="slide-title-header">Machine Learning • Week 1</div>
+  <div class="slide-title-header">Machine Learning • Module 1|1</div>
   <div></div>
 </div>
 
