@@ -69,19 +69,19 @@
       </ul>
     </div>
     
-<div class="stats-container">
-  <h3 class="stats-title">Usage Statistics</h3>
-  <div class="stat-box">
-    <div class="stat-number">67%</div>
-    <div class="stat-text">of data scientists use Python (Stack Overflow 2024)</div>
+<div style="background: #16213e; border: 1px solid #334155; border-radius: 12px; padding: 24px; backdrop-filter: blur(10px); box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);">
+  <h3 style="font-size: 20px; font-weight: 600; color: #3b82f6; margin-bottom: 20px; border-bottom: 1px solid #334155; padding-bottom: 8px;">Usage Statistics</h3>
+  <div style="margin-bottom: 16px; padding: 12px; background: #0f172a; border-radius: 8px; border-left: 4px solid #22d3ee;">
+    <div style="font-size: 24px; font-weight: 700; color: #22d3ee; display: block;">67%</div>
+    <div style="font-size: 14px; color: #cbd5e1; margin-top: 4px;">of data scientists use Python (Stack Overflow 2024)</div>
   </div>
-  <div class="stat-box">
-    <div class="stat-number">Top Choice</div>
-    <div class="stat-text">at Google, Netflix, Spotify</div>
+  <div style="margin-bottom: 16px; padding: 12px; background: #0f172a; border-radius: 8px; border-left: 4px solid #22d3ee;">
+    <div style="font-size: 24px; font-weight: 700; color: #22d3ee; display: block;">Top Choice</div>
+    <div style="font-size: 14px; color: #cbd5e1; margin-top: 4px;">at Google, Netflix, Spotify</div>
   </div>
-  <div class="stat-box">
-    <div class="stat-number">8.2M</div>
-    <div class="stat-text">developers worldwide use Python</div>
+  <div style="margin-bottom: 16px; padding: 12px; background: #0f172a; border-radius: 8px; border-left: 4px solid #22d3ee;">
+    <div style="font-size: 24px; font-weight: 700; color: #22d3ee; display: block;">8.2M</div>
+    <div style="font-size: 14px; color: #cbd5e1; margin-top: 4px;">developers worldwide use Python</div>
   </div>
 </div>
   </div>
