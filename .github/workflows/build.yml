@@ -40,7 +40,10 @@ jobs:
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: .
+          path: |
+            machine-learning/
+            data-analytics/
+            data-visualization/
 
   deploy:
     environment:
