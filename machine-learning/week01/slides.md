@@ -74,24 +74,24 @@
         Usage Statistics
       </h3>
       <div style="margin-bottom: 16px; padding: 12px; background: #0f172a; border-radius: 8px; border-left: 4px solid #22d3ee;">
-        <div style="font-size: 24px; font-weight: 700; color: #22d3ee; display: block;">67%</div>
-        <div style="font-size: 14px; color: #cbd5e1; margin-top: 4px;">of data scientists use Python (Stack Overflow 2024)</div>
+        <span style="font-size: 24px; font-weight: 700; color: #22d3ee; display: block;">67%</span>
+        <span style="font-size: 14px; color: #cbd5e1; margin-top: 4px;">of data scientists use Python (Stack Overflow 2024)</span>
       </div>
       <div style="margin-bottom: 16px; padding: 12px; background: #0f172a; border-radius: 8px; border-left: 4px solid #22d3ee;">
-        <div style="font-size: 24px; font-weight: 700; color: #22d3ee; display: block;">Top Choice</div>
-        <div style="font-size: 14px; color: #cbd5e1; margin-top: 4px;">at Google, Netflix, Spotify</div>
+        <span style="font-size: 24px; font-weight: 700; color: #22d3ee; display: block;">Top Choice</span>
+        <span style="font-size: 14px; color: #cbd5e1; margin-top: 4px;">at Google, Netflix, Spotify</span>
       </div>
       <div style="margin-bottom: 16px; padding: 12px; background: #0f172a; border-radius: 8px; border-left: 4px solid #22d3ee;">
-        <div style="font-size: 24px; font-weight: 700; color: #22d3ee; display: block;">8.2M</div>
-        <div style="font-size: 14px; color: #cbd5e1; margin-top: 4px;">developers worldwide use Python</div>
+        <span style="font-size: 24px; font-weight: 700; color: #22d3ee; display: block;">8.2M</span>
+        <span style="font-size: 14px; color: #cbd5e1; margin-top: 4px;">developers worldwide use Python</span>
       </div>
     </div>
   </div>
   
-  <div style="background: #0f172a; border: 1px solid #334155; border-radius: 8px; padding: 20px; font-family: 'Monaco', 'Consolas', monospace; font-size: 16px; line-height: 1.6;">
-    <div style="color: #64748b; margin-bottom: 8px;"># This reads like English</div>
-    <div style="color: #f59e0b; margin-bottom: 8px;">if sales &gt; target:</div>
-    <div style="color: #f59e0b; margin-left: 20px;">print(<span style="color: #22d3ee;">"Goal achieved!"</span>)</div>
+  <div style="background: #0f172a; border: 1px solid #334155; border-radius: 8px; padding: 20px; font-family: 'Monaco', 'Consolas', monospace; font-size: 16px;">
+    <span style="color: #64748b;"># This reads like English</span><br>
+    <span style="color: #f59e0b;">if</span> <span style="color: #a855f7;">sales</span> &gt; <span style="color: #a855f7;">target</span>:<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #f59e0b;">print</span>(<span style="color: #22d3ee;">"Goal achieved!"</span>)
   </div>
 </div>
 
