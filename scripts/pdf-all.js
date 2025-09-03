@@ -21,7 +21,7 @@ for (const f of files) {
   const dir = path.dirname(f);
   const pdf = path.join(dir, "deck.pdf");
   
-  const cmd = `npx decktape reveal "${f}" "${pdf}"`;
+  const cmd = `npx decktape --no-sandbox reveal "${f}" "${pdf}"`;
   
   try {
     execSync(cmd, { stdio: "inherit" });
