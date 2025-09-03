@@ -69,21 +69,21 @@
       </ul>
     </div>
     
-    <div class="stats-container">
-      <h3 class="stats-title">Usage Statistics</h3>
-      <div class="stat-box">
-        <div class="stat-number">67%</div>
-        <div class="stat-text">of data scientists use Python (Stack Overflow 2024)</div>
-      </div>
-      <div class="stat-box">
-        <div class="stat-number">Top Choice</div>
-        <div class="stat-text">at Google, Netflix, Spotify</div>
-      </div>
-      <div class="stat-box">
-        <div class="stat-number">8.2M</div>
-        <div class="stat-text">developers worldwide use Python</div>
-      </div>
-    </div>
+<div class="stats-container">
+  <h3 class="stats-title">Usage Statistics</h3>
+  <div class="stat-box">
+    <div class="stat-number">67%</div>
+    <div class="stat-text">of data scientists use Python (Stack Overflow 2024)</div>
+  </div>
+  <div class="stat-box">
+    <div class="stat-number">Top Choice</div>
+    <div class="stat-text">at Google, Netflix, Spotify</div>
+  </div>
+  <div class="stat-box">
+    <div class="stat-number">8.2M</div>
+    <div class="stat-text">developers worldwide use Python</div>
+  </div>
+</div>
   </div>
   
   <div style="background: #0f172a; border: 1px solid #334155; border-radius: 8px; padding: 20px; font-family: 'Monaco', 'Consolas', monospace; font-size: 16px;">
