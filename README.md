@@ -102,9 +102,10 @@ Build all decks:
 npm run build:all
 ```
 
-Generate PDFs:
+Generate PDFs (external/on-demand):
 ```bash
-npm run pdf:all
+npm run pdf:local  # Local generation
+# Or trigger GitHub Actions workflow manually
 ```
 
 ## Authoring Guidelines
@@ -142,7 +143,7 @@ The system uses a custom dark theme (`theme/tim.css`) with:
 The system uses GitHub Actions for automated building and deployment:
 - Builds trigger on Markdown file changes
 - Static HTML generated and deployed to GitHub Pages
-- PDF exports created for offline use
+- PDF generation available as separate, on-demand workflow
 
 ## Sharing and Distribution
 

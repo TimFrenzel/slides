@@ -16,7 +16,7 @@ Author Reveal.js decks in plain Markdown. Build static HTML with reveal-md. Host
 * Static HTML output only
 * Dark theme only
 * Videos on YouTube unlisted
-* PDF exports for Canvas and offline
+* PDF exports available on-demand (external workflow)
 
 ## Out of scope for now
 
@@ -47,20 +47,30 @@ slides/
   shared/
     images/
     snippets.md
-  mgsc-220/
-    wk01/
+  machine-learning/
+    week01/
       slides.md
       index.html
       assets/
-    wk02/
-  mgsc-310/
-    wk01/
+    week02/
+  data-analytics/
+    week01/
+      slides.md
+      index.html
+      assets/
+    week02/
+  data-visualization/
+    week01/
+      slides.md
+      index.html
+      assets/
+    week02/
 ```
 
 Folder naming
 
 * Course in lowercase with dashes
-* Week with two digits such as `wk01`, `wk02`
+* Week with two digits such as `week01`, `week02`
 
 Branch strategy
 
@@ -74,7 +84,7 @@ Commit message style
 
 Tags
 
-* `MGSC220-Wk01`, `MGSC310-Wk01`
+* `ML-Week01`, `DA-Week01`, `DV-Week01`
 
 ---
 
@@ -455,7 +465,7 @@ jobs:
           node-version: "20"
       - run: npm ci || npm i
       - run: npm run build:all
-      - run: npm run pdf:all
+      # PDF generation moved to separate workflow
       - uses: actions/upload-pages-artifact@v3
         with:
           path: .

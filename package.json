@@ -1,7 +1,7 @@
 {
   "name": "slides",
   "version": "1.0.0",
-  "description": "A modern presentation authoring and hosting system for educational content. Create interactive slides in Markdown, build static HTML with Reveal.js, and host on GitHub Pages with seamless WordPress integration.",
+  "description": "A modern presentation authoring and hosting system for educational content. Create interactive slides in Markdown, build static HTML with Reveal.js, and host on GitHub Pages for reliable classroom delivery.",
   "main": "index.js",
   "scripts": {
     "vendor": "node scripts/vendor-assets.js",

@@ -9,10 +9,11 @@ yarn-error.log*
 **/plugin/
 **/css/
 **/_assets/
-**/index.html
 **/slides.html
 **/deck.pdf
 **/favicon.ico
+
+# Note: index.html files are tracked for GitHub Pages deployment
 
 # OS files
 .DS_Store
