@@ -1,6 +1,6 @@
 # Slides project spec
 
-Author Reveal.js decks in plain Markdown. Build static HTML with reveal-md. Host on GitHub Pages. Embed on WordPress with a responsive iframe.
+Author Reveal.js decks in plain Markdown. Build static HTML with reveal-md. Host on GitHub Pages for reliable classroom delivery.
 
 ## Goals
 
@@ -8,7 +8,7 @@ Author Reveal.js decks in plain Markdown. Build static HTML with reveal-md. Host
 * Consistent look across courses
 * Smooth playback on campus networks
 * Simple updates and rollbacks
-* Clean WordPress integration
+* Direct sharing via GitHub Pages URLs
 
 ## Scope
 
@@ -477,23 +477,28 @@ GitHub Pages setup
 
 ---
 
-## WordPress embed
+## Sharing and Distribution
 
-Gutenberg custom HTML block
+### Direct Links
+Share slides directly via GitHub Pages URLs:
+- https://timfrenzel.github.io/slides/machine-learning/week01/
+- https://timfrenzel.github.io/slides/data-analytics/week01/
+- https://timfrenzel.github.io/slides/data-visualization/week01/
+
+### Embedding (if needed)
+For platforms that support iframe embedding:
 
 ```html
 <div style="position:relative;padding-top:56.25%;width:100%;height:0;overflow:hidden;">
   <iframe
-    src="https://<user>.github.io/slides/mgsc-220/wk01/index.html"
-    title="MGSC 220 Week 1"
+    src="https://timfrenzel.github.io/slides/machine-learning/week01/index.html"
+    title="Machine Learning Week 1"
     style="position:absolute;top:0;left:0;width:100%;height:100%;border:0"
     allowfullscreen
     loading="lazy">
   </iframe>
 </div>
 ```
-
-WordPress keeps no slide assets
 
 ---
 

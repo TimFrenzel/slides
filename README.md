@@ -1,6 +1,6 @@
 # Academic Slides System
 
-A modern presentation authoring and hosting system for educational content. Create interactive slides in Markdown, build static HTML with Reveal.js, and host on GitHub Pages with seamless WordPress integration.
+A modern presentation authoring and hosting system for educational content. Create interactive slides in Markdown, build static HTML with Reveal.js, and host on GitHub Pages for reliable classroom delivery.
 
 ## Overview
 
@@ -8,8 +8,8 @@ This system enables educators to:
 - **Author presentations in plain Markdown** for fast, version-controlled content creation
 - **Generate interactive HTML slides** using Reveal.js with a consistent dark theme
 - **Host as static websites** on GitHub Pages for reliable classroom delivery
-- **Embed in WordPress** via responsive iframes
 - **Export to PDF** for LMS integration and offline use
+- **Share via direct links** for easy access and distribution
 
 ## Key Features
 
@@ -144,9 +144,16 @@ The system uses GitHub Actions for automated building and deployment:
 - Static HTML generated and deployed to GitHub Pages
 - PDF exports created for offline use
 
-## WordPress Integration
+## Sharing and Distribution
 
-Embed slides in WordPress using a custom HTML block:
+### Direct Links
+Share slides directly via GitHub Pages URLs:
+- **Machine Learning**: https://timfrenzel.github.io/slides/machine-learning/week01/
+- **Data Analytics**: https://timfrenzel.github.io/slides/data-analytics/week01/
+- **Data Visualization**: https://timfrenzel.github.io/slides/data-visualization/week01/
+
+### Embedding in Other Platforms
+If you need to embed slides in other platforms, use this responsive iframe code:
 
 ```html
 <div style="position:relative;padding-top:56.25%;width:100%;height:0;overflow:hidden;">
