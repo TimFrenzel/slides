@@ -39,7 +39,7 @@
   <div></div>
 </div>
 
-<div style="padding: 60px 24px 70px 24px; height: 100%; display: flex; flex-direction: column; justify-content: center; box-sizing: border-box;">
+<div class="slide-content">
   <h2 style="font-size: 32px; font-weight: 600; letter-spacing: -0.01em; color: #f8fafc; margin-bottom: 32px; text-align: center;">
     Why Python Dominates Data Science
   </h2>
