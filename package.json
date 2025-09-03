@@ -7,6 +7,7 @@
     "vendor": "node scripts/vendor-assets.js",
     "build:all": "node scripts/build-all.js",
     "pdf:all": "node scripts/pdf-all.js",
+    "pdf:local": "npm run build:all && npm run pdf:all",
     "preview": "npx reveal-md --help",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

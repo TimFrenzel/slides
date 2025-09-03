@@ -34,9 +34,6 @@ jobs:
       - name: Build all slide decks
         run: npm run build:all
         
-      - name: Generate PDFs
-        run: npm run pdf:all
-        
       - name: Create root index.html
         run: |
           echo '<!DOCTYPE html>' > index.html

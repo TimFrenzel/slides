@@ -20,7 +20,7 @@ for (const f of files) {
   const cmd = [
     "npx reveal-md",
     f,
-    "--theme ./theme/tim.css",
+    "--theme theme/tim.css",
     `--static ${out}`
   ].join(" ");
   
